@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: transparent;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: darkgray; 
+    border-radius: 20px;
+    height: 100px;
+}
+
+.username-intput{
+    @apply w-full border-gray-100 rounded rounded-l-none  bg-slate-50/50 focus:ring-0 dark:bg-zinc-700 dark:border-zinc-600 dark:text-gray-200;
+}
+
+
+
+
+.btn{
+    padding: 0.4375rem 0.75rem;
+    border-radius: 0.3rem;
+    font-weight: 400;
+    font-size: .875rem;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    /* width: 100%; */
+}
+
+
+.tab-content{
+    display: none;
+}
+
+.tab-active{
+    display: block;
+}
+
+.tab-button.active{
+    background-color: #7269ef1a;
+    --tw-text-opacity: 1;
+    color: rgb(114 105 239 / var(--tw-text-opacity));
+}
+
+.messages{
+    height: calc(100% - 165px);
+}
+.owner{
+    flex-direction: row-reverse;
+}
+.owner .message-content {
+    @apply relative order-2 px-5 py-3 text-gray-700 rounded-lg bg-gray-50 dark:bg-zinc-700 dark:text-gray-50
+}
+
+.message-content{
+    max-width: 60%;
+}
+
+.radious{
+    border-radius: 15px 15px 15px 0;
+    position: relative;
+}
+
+
+.receiver .radious::before{
+    content: "";
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    @apply h-4 w-5 dark:bg-violet-500 absolute left-0 -bottom-2
+
+}
+
+.owner .radious {
+    border-radius: 15px 15px 0px 15px;
+}
+
+.owner .radious::before{
+    content: "";
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    @apply h-4 w-5 dark:bg-zinc-700 absolute right-0 -bottom-2
+}
+
+
+.receiver .actions{
+    @apply left-20 top-4
+}
+.chat-show{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000 !important;
+}
+
+
+
+.slide-hiden{
+    @apply hidden;
+} 
+
+.gradient{
+    @apply after:w-1/2 after:h-full after:bg-gradient-to-b after:from-slate-800 after:to-transparent after:absolute after:top-0;
+}
