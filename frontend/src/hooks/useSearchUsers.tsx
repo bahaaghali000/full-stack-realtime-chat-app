@@ -29,7 +29,7 @@ const useSearchUsers = (value: string) => {
 
   useEffect(() => {
     setLoading(true);
-    let timeout;
+    let timeout: any;
     timeout = setTimeout(() => {
       fetchUsers();
     }, 1000);
