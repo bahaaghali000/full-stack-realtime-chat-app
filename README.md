@@ -1,40 +1,88 @@
-# BGChat App
+<h1 align="center">Real Time Chat app</h1>
 
-<h2><a href="">Live Demo</a></h2>
+<p align="center">A Full-Stack Real Time Chat App using MERN Stack && Socket.io</p>
 
-<img src="/src/assets/Preview.png" />
+## Features
 
-<h3>Technologies Used:</h3>
 <ul>
-   <li>React.js</li>
-   <li>Typescript</li>
-   <li>Tailwind CSS</li>
-   <li>Redux Toolkit</li>
-   <li>Firebase</li>
+  <li>Register/Login</li>
+  <li>Send and receive messages in real time</li>
+  <li>Display online/offline status indicators </li>
+  <li>Show typing indicators to let users know when someone is typing a message in the chat.</li>
+  <li>Enable users to share files such as images</li>
+  <li>Update your profile such as profile picture, username, bio</li>
+  <li>Full Responsive</li>
+  <li>Skeletons Loading</li>
 </ul>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h4><a href="https://drive.google.com/file/d/1_XFQvxsFsPTzYWQwPlT3dNtpKd6u_gbB/view?usp=sharing">Demo Video for the app</a></h4>
 
-Currently, two official plugins are available:
+## Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend
 
-## Expanding the ESLint configuration
+  <ul>
+  <li>React.js</li>
+  <li>TailwindCSS</li>
+  <li>Redux ToolKit</li> 
+  <li>TypeScript</li> 
+  <li>react-hot-toast</li>
+  <li>socket.io-client</li>
+</ul>
+<h3>Backend</h3>
+<ul>
+  <li>Node.js</li>
+  <li>Express</li>
+  <li>MongoDB</li>
+  <li>jwt</li>
+  <li>bcrypt</li> 
+  <li>Socket.io</li> 
+</ul>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Setting up development environment
 
-- Configure the top-level `parserOptions` property like this:
+### Backend
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Installation
+
+```bash
+$ git clone https://github.com/bahaaghali000/full-stack-realtime-chat-app.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```bash
+$ cd backend
+```
+
+```bash
+$ npm install
+```
+
+## Running the app
+
+```bash
+# development
+$ npm start
+
+```
+
+### Frontend
+
+First Installation
+
+```bash
+cd frontend
+```
+
+```bash
+npm i
+```
+
+Second, run the development server:
+
+```bash
+npm run dev
+```
+
+### UI
+
+taken from <a href="https://themesbrand.com/chatvia-tailwind/">ThemeForest</a>
