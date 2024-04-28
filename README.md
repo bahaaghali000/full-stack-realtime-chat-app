@@ -15,7 +15,7 @@
   <li>Skeletons Loading</li>
 </ul>
 
-<h4><a href="https://drive.google.com/file/d/1_XFQvxsFsPTzYWQwPlT3dNtpKd6u_gbB/view?usp=sharing">Demo Video for the app</a></h4>
+<img src="./frontend/src/assets/Preview.png"  alt="Preview Picture" />
 
 ## Technologies
 
