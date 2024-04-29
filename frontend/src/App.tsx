@@ -3,7 +3,7 @@ import Routing from "./Routes/Router";
 import SideBar from "./components/SideBar/SideBar";
 import { useLocation } from "react-router-dom";
 import Chat from "./components/Chat/Chat";
-import { useContext, useEffect } from "react";
+import { Suspense, useContext, useEffect } from "react";
 import { io } from "socket.io-client";
 import { useDispatch } from "react-redux";
 import {
@@ -94,7 +94,15 @@ const App: React.FC = () => {
       {!location.pathname.includes("login") &&
         !location.pathname.includes("signup") && <SideBar />}
       <main className="md:pl-[75px] z-20 w[500px] overflow-hidden  max-md:w-full max-md:pt-[70px]  min-h-screen shadow bg-violet-50  dark:bg-zinc-900">
-        <Routing />
+        <Suspense
+          fallback={
+            <div className=" absolute z-50 top-0 left-0 min-h-screen w-full flex items-center justify-center bg-black bg-opacity-50">
+              <span className="loading loading-ring loading-lg"></span>
+            </div>
+          }
+        >
+          <Routing />
+        </Suspense>
       </main>
       <Chat />
     </>
