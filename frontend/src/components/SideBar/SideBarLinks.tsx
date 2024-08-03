@@ -4,7 +4,7 @@ import {
   RiSettings2Line,
   RiInformationLine,
 } from "react-icons/ri";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const nav_links = [
   {
